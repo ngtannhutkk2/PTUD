@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hướng dẫn sử dụng phần mềm quản lí bán sách nhà sách Phương Nam</title>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">HƯỚNG DẪN SỬ DỤNG PHẦN MỀM QUẢN LÍ NHÀ SÁCH PHƯƠNG NAM</h1>
+        <h2>1. GIỚI THIỆU ỨNG DỤNG</h2>
+        <p><br> Ứng dụng sử dụng phần mềm Eclipse IDE for Java EE Developers để code tương tác với giao diện, sử dụng SQL Server để lưu trữ thông tin của người dùng, thông tin sản phẩm, …
+           <div >Danh sách các chức năng chính của ứng dụng:</div>  
+           <br > - Đăng nhập vào tài khoản.
+           <br> - Chức năng quản lí hóa đơn
+           <br> + Thêm hóa đơn
+           <br> + Xóa hóa đơn
+           <br> + Sửa hóa đơn
+           <br> + Tìm kiếm hóa đơn theo mã hóa đơn
+           <br> - Chức năng thanh toán
+           <br> - Chức năng quản lý sản phẩm
+           <br> + Xem thông tin sản phẩm
+           <br> + Thêm một sản phẩm mới
+           <br> + Lưu thông tin sản phẩm
+           <br> + Tìm kiếm sản phẩm theo mã
+           <br> + Tìm kiếm sản phẩm theo tên
+           <br> + Cập nhật thông tin sản phẩm
+           <br> - Chức năng quản lý thông tin nhân viên
+           <br> + Xem thông tin nhân viên
+           <br> + Thêm một nhân viên mới
+           <br> + Lưu thông tin nhân viên
+           <br> + Sửa thông tin nhân viên
+           <br> + Tìm kiếm nhân viên theo tên nhân viên
+           <br> + Tìm kiếm nhân viên theo mã nhân viên
+           <br> - Chức năng quản lí thông tin khách hàng:
+           <br> + Xem thông tin khách hàng
+           <br> + Thêm khách hàng
+           <br> + Sửa thông tin khách hàng
+           <br> + Tìm kiếm nhân viên theo tên khách hàng
+           <br> + Tìm kiếm nhân viên theo mã khách hàng
+           <br> + Xóa khách hàng
+           <br> - Chức năng quản lý doanh thu (Quản Lí):
+           <br> + Thống kê sản phẩm tồn
+           <br> + Tính doanh thu của nhân viên chỉ định theo ngày, tháng, năm</p>
+        <h2>2. CẤU HÌNH PHẦN CỨNG - PHẦN MỀM</h2>
+        <h3>2.1 Phần cứng</h3>
+        <div class="col-md-12">
+            <table class="table table-hover" id="dulieu">
+                <tbody>
+                    <tr>
+                        <th>CPU</th>
+                        <th>RAM</th>
+                        <th>SSD</th>
+                        <th>Architecture</th>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Intel(R)Core (TM) i5-9300H 2.40Ghz</td>
+                        <td>8 GB</td>
+                        <td>512 GB</td>
+                        <td>64 bit</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3>2.2 Phần mềm</h3>
+    </div>
+    <div class="col-md-12">
+        <table class="table table-hover" id="dulieu">
+            <tbody>
+                <tr>
+                    <th>Tên phần mềm</th>
+                    <th>Phiên bản</th>
+                    <th>Loại</th>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Eclipse IDE for Enterprise Java and Web Developers - 2022-12</td>
+                    <td>12.0</td>
+                    <td>IDE cho Java, JFK 16</td>
+                </tr>
+                <tr>
+                    <td>JDBC</td>
+                    <td>4.2</td>
+                    <td>Executable Jar File (.jar)</td>
+                </tr>
+                <tr>
+                    <td>Microsoft Windows 11</td>
+                    <td>20H2</td>
+                    <td>Hệ điều hành</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h2>3. CÁC CHỨC NĂNG CHÍNH</h2>
+        <h3>-Chức năng của ứng dụng</h3>
+        <div><p>
+            Bước 1: Đăng nhập bằng cách nhập mã số nhân viên và mật khẩu rồi nhấn nút đăng nhập
+            <br>
+        </p>
+        <img src="../IMG/1.jpg" width="100%">
+        <p>
+            Nếu người dùng quên mật khẩu sẽ chọn chức năng quên mật khẩu
+            <br>
+        </p>
+        <img src="../IMG/2.jpg" width="100%">
+        <p>
+            Trường hợp người dùng quên mật khẩu mà cần được cập nhật thì nhập mã nhân viên rồi bấm nút OK
+            <br>
+        </p>
+        <img src="../IMG/3.jpg" width="100%">
+        <p>
+            Bước 2: Người dùng vô trang chính   
+            <br>
+        </p>
+        <img src="../IMG/4.jpg" width="100%">
+        <p>
+            Bước 3: Người dùng chọn "Đến với chúng tôi" vô trang chính hóa đơn
+            <br>
+        </p>
+        <img src="../IMG/5.jpg" width="100%">
+        <p>Trường hợp thông tin khách hàng đã có thì tìm kiếm khách hàng qua số điện thoại, còn chưa có thì thêm khách hàng mới trong giao diện khách hàng ( Bước 27 )
+            <br>
+            Bước 1: Quản lí có thể tìm kiếm khách hàng bằng cách nhập số điện thoại rồi bấm nút "Tìm kiếm"
+            <br>
+            <img src="../IMG/6.jpg" width="100%">
+            Bước 2: Nhập mã sản phẩm để tìm kiếm sản phẩm bằng cách nhập mã rồi nhấn nút "Tìm kiếm"
+            <br>
+            <img src="../IMG/7.jpg" width="100%">
+            Bước 3: Chỉnh sửa số lượng hoặc giảm giá bằng cách nhập text
+            <br>
+            <img src="../IMG/8.jpg" width="100%">
+            Bước 4: Người dùng muốn thêm sản phẩm thì người dùng chọn nút "Thêm sản phẩm" và chọn "Thanh toán"
+            <br>
+            <img src="../IMG/9.jpg" width="100%">
+            <br>
+        </p>
+        <p>
+            Bước 5: Trường hợp người dùng muốn xóa sản phẩm bằng cách chọn dòng cần xóa và bấm nút "Xóa sản phầm" nhưu hình bên dưới
+        </p>
+        <img src="../IMG/10.jpg" width="100%">
+        <img src="../IMG/11.jpg" width="100%">
+        <p>
+            Bước 6: Trường hợp người dùng muốn sửa sản phẩm bằng cách bấm nút "Sửa sản phẩm" như hình bên dưới, chỉnh sửa số lượng hoặc giảm giá bằng cách nhập text, sau đó nhất nút sửa.
+        </p>
+        <img src="../IMG/12.jpg" width="100%">
+        <p>
+            Bước 7: Người dùng chọn In hóa đơn bằng cách chọn nút in hóa đơn sau khi đã thanh toán
+        </p>
+        <img src="../IMG/13.jpg" width="100%">
+        <p>
+            Bước 8: Người dùng có thể làm mới tất cả hóa đơn thì chọn nút “Làm mới” Lưu ý: thông tin sẽ không được lưu khi chọn “Làm mới”
+        </p>
+        <img src="../IMG/14.jpg" width="100%">
+        <p>
+            Bước 9: Để xem chi tiết hóa đơn bằng cách chuyển tab Hóa đơn như hình dưới
+        </p>
+        <img src="../IMG/15.jpg" width="100%">
+        <p>
+            Bước 10: Quản lý chọn nút Sản phẩm để chuyển giao diện Sản phẩm bằng cách nhấn nút “Sản phẩm”
+        </p>
+        <img src="../IMG/16.jpg" width="100%">
+        <p>
+            Bước 11: Người dùng chuyển tab Phiếu nhập hàng và nhập thông tin Sản phẩm rồi bấm nút “Thêm” để lưu thông tin như hình bên dưới
+        </p>
+        <img src="../IMG/17.jpg" width="100%">
+        <p>
+            Bước 12: Xem thông tin các sản phẩm được thêm bởi nhân viên nào đó bằng cách nhấp đúp dòng cần xem
+        </p>
+        <img src="../IMG/18.jpg" width="100%">
+        <p>
+            Trường hợp người dùng muốn tìm kiếm theo Mã Phiếu Nhập thì nhập thông tin cần tìm vô ô tìm theo mã phiếu nhập
+        </p>
+        <img src="../IMG/19.jpg" width="100%">
+        <p>
+            Hoặc có thể tìm kiếm phiếu nhập theo tên bằng cách nhập thông tin cần tìm vô ô Tìm kiếm theo tên nhân viên
+        </p>
+        <img src="../IMG/20.jpg" width="100%">
+        <p>
+            Trường hợp muốn sửa thông tin sản phẩm thì chọn phiếu nhập ở bảng “Bảng phiếu nhập”, sau đó chọn sản phẩm trong Bảng Sản phẩm. Sau đó nhập thông tin cần sửa và nhấn nút “Sửa sản phẩm”.
+        </p>
+        <img src="../IMG/21.jpg" width="100%">
+        <p>
+            Bước 13: Có thể chọn dòng sản phẩm trong Bảng Sản Phẩm rồi nhấn nút Xóa nếu người dùng muốn xóa Sản phẩm trong phiếu nhập
+        </p>
+        <img src="../IMG/22.jpg" width="100%">
+        <p>
+            Bước 14: Chuyển tab Sản phẩm để xem toàn bộ thông tin Sản phẩm
+        </p>
+        <img src="../IMG/23.jpg" width="100%">
+        <p>
+            Bước 15: Tìm kiếm Mã sản phẩm bằng cách nhập vào ô Tìm Theo Mã
+        </p>
+        <img src="../IMG/24.jpg" width="100%">
+        <p>
+            Bước 16: Có thể tìm kiếm theo tên bằng cách nhập thông tin cần tìm vào ô Tìm theo tên:
+        </p>
+        <img src="../IMG/25.jpg" width="100%">
+        <p>
+            Bước 17: Muốn sửa thông tin sản phẩm bằng cách tìm kiếm sản phẩm đó hoặc chọn dòng sản phẩm cần sửa trên Bảng Sản phẩm và làm theo dưới hình:
+        </p>
+        <img src="../IMG/26.jpg" width="100%">
+        <p>
+            Bước 18: Trường hợp người dùng muốn thêm Loại Sản phẩm bằng cách đổi tab rồi nhập loại sản phẩm và bấm nút Thêm
+        </p>
+        <img src="../IMG/27.jpg" width="100%">
+        <img src="../IMG/28.jpg" width="100%">
+        <p>
+            Bước 19: Người dùng muốn sửa Loại sản phẩm thì chọn dòng cần sửa rồi nhập thông tin và bấm nút sửa
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 20: Tìm kiếm loại sản phẩm bằng cách nhập mã loại sản phẩm vào ô “Tìm theo mã”
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 21: Tìm kiếm loại sản phẩm bằng cách nhập tên loại sản phẩm vào ô “Tìm theo tên”
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 22: Chuyển tab Nhà cung cấp để xem chi tiết thông tin nhà cung cấp
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 23: Thêm nhà cung cấp theo hình bên dưới
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 24: Sửa thông tin nhà cung cấp bằng cách chọn dòng cần sửa, nhập thông tin và nhấn nút sửa
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 25: Có thể tìm kiếm nhà cung cấp bằng cách nhập mã nhà cung cấp theo hình:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 26: Có thể tìm kiếm nhà cung cấp bằng cách nhập tên nhà cung cấp theo hình:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 27: Trường hợp người dùng muốn thêm khách hàng thì bấm nút Khách hàng để đổi giao diện và nhập thông tin Khách hàng rồi nhấn nút Thêm
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 28: Người dùng muốn sửa Khách hàng thì chọn dòng khách hàng cần sửa, nhập thông tin và nhấn nút sửa:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 29: Tìm kiếm khách hàng bằng cách nhập số điện thoại vào ô tìm theo số điện thoại:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 30: Tìm kiếm khách hàng bằng cách nhập tên vào ô tìm theo tên:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 31: Trường hợp người dùng muốn thêm nhân viên thì bấm nút Nhân viên để đổi giao diện và nhập thông tin Nhân viên rồi nhấn nút Thêm
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 33: Nếu người dùng muốn tìm kiếm theo Mã nhân viên thì chọn nút Mã nhân viên mà nhập thông tin cần tìm vô ô tìm kiếm
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 34: Chuyển tab Chức vụ để xem chi tiết chức vụ của nhân viên:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 35: Người dùng muốn xem thông tin Nhân viên theo chức vụ thì nhấn dòng cần xem, thông tin sẽ xuất ra bảng dưới
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 36: Người dùng thêm chức vụ bằng cách làm theo hình:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 37: Người dùng sửa chức vụ bằng cách chọn dòng cần sửa, nhập thông tin và nhấn nút sửa:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 38: Chuyển tab Tài khoản để xem chi tiết tài khoản của nhân viên:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 39: Người dùng thêm tài khoản bằng cách làm theo hình:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 40: Người dùng sửa tài khoản bằng cách chọn dòng cần sửa, nhập thông tin và nhấn nút sửa:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 41: Người dùng chọn xóa tài khoản bằng cách chọn dòng và nhấn nút xóa:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 42: Quản lý muốn thống kê thì bấm nút Thống kê để đổi giao diện Thống kê
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 43: Quản lý chuyển tab sang Thống kê Sản phẩm, muốn thống kê theo ngày thì chọn ngày bắt đầu và ngày kết thúc rồi chọn Hiển thị doanh thu
+        </p>
+        <img src="" width="100%">
+        <img src="" width="100%">
+        <p>
+            Bước 44: Có thể lọc danh sách theo loại sản phẩm bằng cách chọn loại sản phẩm:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 45: Có thể lọc danh sách theo nhà cung cấp bằng cách chọn nhà cung cấp:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 46: Có thể xuất danh sách theo file pdf:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 47: Có thể xuất danh sách theo file excel:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 48: Có thể xuất danh sách theo biểu đồ cột:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 49: Có thể xuất danh sách theo biểu đồ đường:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 50: Có thể xuất danh sách theo biểu đồ tròn:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 51: Người dùng chuyển tab sang Thống kê doanh thu để xem danh sách doanh thu:
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 52: Có thể lọc danh sách theo loại sản phẩm bằng cách chọn loại sản phẩm:  
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 53: Chuyển tab Thống kê nhân viên để xem chi tiết danh sách nhân viên có doanh thu
+        </p>
+        <img src="" width="100%">
+        <p>
+            Bước 54: Chuyển giao diện Hổ trợ để xem chi tiết thông tin cũng như cách sử dụng phần mềm:
+        </p>
+        <img src="" width="100%">
+        <img src="" width="100%">
+    </div>
+    </div>
+</body>
+</html>
